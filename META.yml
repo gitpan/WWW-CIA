@@ -1,0 +1,30 @@
+--- #YAML:1.0
+name: WWW-CIA
+version: 0.01
+license: perl
+distribution_type: module
+requires:
+  DB_File: 1.8
+  LWP::UserAgent: 2.0
+  MLDBM: 2.01
+  Storable: 2.0
+recommends: {}
+build_requires: {}
+conflicts: {}
+provides:
+  WWW::CIA:
+    file: lib/WWW/CIA.pm
+    version: 0.01
+  WWW::CIA::Parser:
+    file: lib/WWW/CIA/Parser.pm
+    version: 0.01
+  WWW::CIA::Source:
+    file: lib/WWW/CIA/Source.pm
+    version: 0.01
+  WWW::CIA::Source::DBM:
+    file: lib/WWW/CIA/Source/DBM.pm
+    version: 0.01
+  WWW::CIA::Source::Web:
+    file: lib/WWW/CIA/Source/Web.pm
+    version: 0.01
+generated_by: Module::Build version 0.21
